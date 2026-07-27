@@ -1,0 +1,15 @@
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int[] n = new int[2];
+        for(int i = 0; i<numbers.length; i++){
+            for(int j = 0; j<numbers.length; j++){
+                if(i != j && numbers[i]+numbers[j]==target){
+                    n[0] = i + 1;
+                    n[1] = j + 1;
+                    return n;
+                }
+            }
+        }
+        return n;
+    }
+}
